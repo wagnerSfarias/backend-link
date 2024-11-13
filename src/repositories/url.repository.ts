@@ -19,11 +19,10 @@ export class UrlRepository {
             slug += characters.charAt(Math.floor(Math.random() * characters.length));
         }
 
-        const baseUrl = 'http://localhost:3333/'
+        const baseUrl = 'https://backend-link-5v5z.onrender.com'
 
         const newUser = await prisma.url.create({
             data: {
-                // slug: `/${slug}`,
                 slug,
                 longUrl,
                 clicks
@@ -37,7 +36,7 @@ export class UrlRepository {
     async index() {
         const newUser = await prisma.url.findMany()
 
-        const baseUrl = 'http://localhost:3333/'
+        const baseUrl = 'https://backend-link-5v5z.onrender.com'
 
         const newUrl = newUser.map((item) => {
             return { ...item, 'shortenedUrl': baseUrl + item.slug }
