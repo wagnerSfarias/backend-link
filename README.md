@@ -107,7 +107,7 @@ Exemplo :
 
  Exemplo:
 
-<img width="600" src="./src/assets/env.png">
+<img width="300" src="./src/assets/env.png">
 
 
 ### Inicie o servidor
@@ -115,8 +115,6 @@ Exemplo :
 ```bash
   npm run dev
 ```
-
-
 
 
 ## Tecnologias utilizadas 👨🏻‍💻
