@@ -10,5 +10,5 @@ exports.urlRoutes.get('/', (_, res) => {
 });
 exports.urlRoutes.get('/urls', url.index);
 exports.urlRoutes.post('/new', url.create);
-exports.urlRoutes.get('/:id', url.findById);
+exports.urlRoutes.get('/:id', url.findBySlug);
 exports.urlRoutes.put('/:id', url.updateClicks);

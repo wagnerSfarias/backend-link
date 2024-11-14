@@ -39,7 +39,7 @@ export class UrlController {
         }
     }
 
-    async findById(req: Request, res: Response, next: NextFunction) {
+    async findBySlug(req: Request, res: Response, next: NextFunction) {
         try {
             const slug = req.params.id
 

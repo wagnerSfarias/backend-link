@@ -11,6 +11,6 @@ export const urlRoutes = Router()
 
 urlRoutes.get('/urls', url.index)
 urlRoutes.post('/new', url.create)
-urlRoutes.get('/:id', url.findById)
+urlRoutes.get('/:id', url.findBySlug)
 urlRoutes.put('/:id', url.updateClicks)
 

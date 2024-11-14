@@ -28,7 +28,7 @@ class UrlController {
             next(err);
         }
     }
-    async findById(req, res, next) {
+    async findBySlug(req, res, next) {
         try {
             const slug = req.params.id;
             const repository = new url_repository_1.UrlRepository();
